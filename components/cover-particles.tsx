@@ -24,7 +24,9 @@ const CoverParticles = () => {
         });
     }, []);
   return (
-    init && <Particles
+    init &&
+    <div className="w-0">
+    <Particles
             id="tsparticles"
             options={{
                 fpsLimit: 120,
@@ -89,6 +91,7 @@ const CoverParticles = () => {
                 detectRetina: true,
             }}
         />
+        </div>
   );
 }
 
