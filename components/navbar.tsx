@@ -1,7 +1,13 @@
+"use client"
+
+import { usePathname } from "next/navigation";
 import { itemsNavbar } from "@/data";
 import Link from "next/link";
 
 const Navbar = () => {
+
+  const router = usePathname()
+
   return (
     <div className="fixed top-4 z-40 flex items-center justify-center w-full">
       <nav>
@@ -10,7 +16,10 @@ const Navbar = () => {
             <Link
               key={item.id}
               href={item.link}
-              className="px-3 py-2 transition-colors duration-150 rounded-full hover:bg-emerald-400"
+              className={
+                `px-3 py-2 transition-colors duration-150 rounded-full hover:bg-emerald-400
+                 ${router === item.link && 'bg-emerald-400'}`
+              }
             >
               {item.icon}
             </Link>
