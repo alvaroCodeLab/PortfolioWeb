@@ -10,7 +10,7 @@ const Introduction = () => {
         {/* Imagen - lado izquierdo */}
         <div className="flex justify-center md:justify-start">
           <Image
-            src="/home-4.png"
+            src="/home.png"
             alt="Programming 3D illustration"
             width={700}
             height={700}
@@ -45,7 +45,7 @@ const Introduction = () => {
                 Como desarrollador fontend y creador de contenido, me dedico a conmbinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
             </p>
 
-            <div className="flex items-center justify-center gap-3md: justify-start md:gap-10">
+            <div className="flex items-center gap-3md: justify-start md:gap-10">
                 <Link href="/projects" className="px-3 py-2 transition-all border-2 cursor-pointer text-md w-fit rounded-xl hover:shadow-xl hover:shadow-white/50">
                     Ver Proyectos
                 </Link>
