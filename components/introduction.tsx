@@ -10,7 +10,7 @@ const Introduction = () => {
         {/* Imagen - lado izquierdo */}
         <div className="flex justify-center md:justify-start">
           <Image
-            src="/home.png"
+            src="/home5.png"
             alt="Programming 3D illustration"
             width={700}
             height={700}
@@ -42,7 +42,7 @@ const Introduction = () => {
             </h1>
 
             <p className="mx-auto mb-2 text-xl md:mx-0 md:mb-8">
-                Como desarrollador fontend y creador de contenido, me dedico a conmbinar diseño y funcionalidad para crear experiencias digitales impactantes y accesibles.
+                Desarrollador web junior con formación en programación y sistemas, motivado por aprender, crecer profesionalmente y aportar valor en entornos colaborativos, tanto en proyectos web como en infraestructuras tecnológicas.
             </p>
 
             <div className="flex items-center gap-3md: justify-start md:gap-10">
