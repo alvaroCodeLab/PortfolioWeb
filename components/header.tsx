@@ -12,24 +12,26 @@ const Header = () => {
     }`;
 
   return (
-    <header className="flex justify-center items-center py-5 w-280 mx-auto">
-      <nav className="flex flex-row gap-x-10">
-        <Link href="/" className={linkClass("/")}>
-          Home
-        </Link>
+    <header className="fixed top-0 left-0 w-full z-50 bg-gradientCover">
+      <div className="flex justify-center items-center py-5 max-w-7xl mx-auto">
+        <nav className="flex flex-row gap-x-10">
+          <Link href="/" className={linkClass("/")}>
+            Home
+          </Link>
 
-        <Link href="/about" className={linkClass("/about")}>
-          About
-        </Link>
+          <Link href="/about" className={linkClass("/about")}>
+            About
+          </Link>
 
-        <Link href="/projects" className={linkClass("/projects")}>
-          Projects
-        </Link>
+          <Link href="/projects" className={linkClass("/projects")}>
+            Projects
+          </Link>
 
-        <Link href="/contact" className={linkClass("/contact")}>
-          Contact
-        </Link>
-      </nav>
+          <Link href="/contact" className={linkClass("/contact")}>
+            Contact
+          </Link>
+        </nav>
+      </div>
     </header>
   );
 };

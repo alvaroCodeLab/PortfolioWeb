@@ -21,7 +21,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${urbanist.variable} antialiased`}
+        className={`${urbanist.variable} antialiased
+        min-h-screen 
+        bg-[linear-gradient(90deg,rgba(5,10,30,1)_0%,rgba(0,0,0,1)_100%)]`}
       >
         <Header />
         {children}
