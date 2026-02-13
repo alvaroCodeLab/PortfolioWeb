@@ -1,3 +1,4 @@
+import Avatar from "@/components/avatar";
 import ContainerPage from "@/components/container";
 import TransitionPage from "@/components/TransitionPage";
 
@@ -6,7 +7,13 @@ const PageAboutMe = () => {
         <>
             <TransitionPage />
             <ContainerPage>
-                <p>From Children</p>
+                <Avatar />
+                <h1 className="text-2xl leading-tight text-center md:text-left md:text-5xl md:mt-10">
+                    Toda mi{' '}
+                    <span className="font-bold text-secondary">
+                        trayectoria profesional
+                    </span>
+                </h1>
             </ContainerPage>
         </>
     )
