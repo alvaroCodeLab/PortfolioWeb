@@ -24,10 +24,11 @@ const CoverParticles = () => {
         });
     }, []);
   return (
-    init &&
-    <div className="w-0">
+    init && (
+    <div className="absolute inset-0 -z-10 pointer-events-none">
     <Particles
             id="tsparticles"
+        className="w-full h-full"
             options={{
                 fpsLimit: 120,
                 interactivity: {
@@ -90,9 +91,10 @@ const CoverParticles = () => {
                 },
                 detectRetina: true,
             }}
-        />
-        </div>
-  );
+                />
+                </div>
+        )
+    );
 }
 
 export default CoverParticles;

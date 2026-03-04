@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
+import CoverParticles from "@/components/cover-particles";
 
 const Hero = () => {
   const goToProjects = () => {
@@ -17,6 +18,7 @@ const Hero = () => {
       viewport={{ once: true }}
       transition={{ duration: 0.6 }}
     >
+      <CoverParticles />
       <div className="grid w-full max-w-7xl mx-auto px-6 md:grid-cols-2 items-center">
         <div className="flex justify-center md:justify-start">
           <Image
