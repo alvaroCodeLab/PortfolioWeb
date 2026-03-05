@@ -1,20 +1,31 @@
-"use client";
+import Image from "next/image";
+import Link from "next/link";
 
-import { motion } from "framer-motion";
+import { dataPortfolio } from "@/data";
+
+import TransitionPage from "@/components/TransitionPage";
+import ContainerPage from "@/components/container";
+import PortfolioBox from "@/components/portfolioBox";
+
 
 const Projects = () => {
   return (
-    <motion.section id="projects" className="min-h-screen pt-24 flex items-center"
-      initial={{ opacity: 0, y: 20, filter: 'blur(4px)' }}
-      whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.6 }}
-    >
-      <div className="max-w-7xl mx-auto px-6 w-full">
-        <h2 className="text-3xl font-bold mb-6">Proyectos</h2>
-        <p className="text-slate-400">Aquí van los proyectos — importar y listar los proyectos reales según el `data`.</p>
-      </div>
-    </motion.section>
+    <section id="projects" className="scroll-mt-24">
+      <ContainerPage>
+        <TransitionPage />
+        <div className="flex flex-col justify-center h-full">
+          <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
+            Mis últimos <span className="font-bold text-secondary">trabajos realizados</span>
+          </h1>
+
+          <div className="relative z-10 grid max-w-5xl gap-6 mx-auto mt-4 md:grid-cols-4">
+            {dataPortfolio.map((data) => (
+              <PortfolioBox key={data.id} data={data} />
+            ))}
+          </div>
+        </div>
+      </ContainerPage>
+    </section>
   );
 };
 

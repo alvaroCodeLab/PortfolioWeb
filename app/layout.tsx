@@ -12,6 +12,11 @@ const urbanist = Urbanist({
 export const metadata: Metadata = {
   title: "Álvaro Serrano | Web Developer Portfolio",
   description: "Web developer portfolio of Álvaro Serrano - React, Next.js, Tailwind CSS, Framer Motion project",
+  icons: {
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({

@@ -127,7 +127,7 @@ const About = () => {
       <div
         ref={overlayRef}
         aria-hidden
-        className="fixed inset-0 z-40 bg-gradient-to-br from-[#02040a] via-[#05121a] to-[#02060b]"
+        className="fixed inset-0 z-40 bg-linear-to-br from-[#02040a] via-[#05121a] to-[#02060b]"
         style={{ transform: "translateY(100%)", opacity: 0, pointerEvents: "none", visibility: "hidden", willChange: "transform, opacity", backdropFilter: "none" }}
       />
 
