@@ -33,7 +33,7 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
         <Link
           href={urlGithub}
           target="_blank"
-          className="p-2 transition duration-150 rounded-lg bg-slate-500 hover:bg-slate-500/80"
+          className="p-2 transition duration-150 rounded-lg bg-fuchsia-900 hover:bg-fuchsia-900/80"
         >
           Github
         </Link>
@@ -41,7 +41,7 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
         <Link
           href={urlDemo}
           target="_blank"
-          className="p-2 transition duration-150 rounded-lg bg-secondary hover:bg-secondary/80"
+          className="p-2 transition duration-150 rounded-lg bg-blue-800 hover:bg-blue-800/80"
         >
           Live demo
         </Link>
