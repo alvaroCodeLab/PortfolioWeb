@@ -167,6 +167,7 @@ export const dataPortfolio = [
     image: "/work1.png",
     urlGithub: "#!",
     urlDemo: "#!",
+    techs: ["HTML", "Java", "CSS", "MySQL"],
   },
   {
     id: 2,
@@ -174,6 +175,7 @@ export const dataPortfolio = [
     image: "/work2.png",
     urlGithub: "#!",
     urlDemo: "#!",
+    techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
   {
     id: 3,
@@ -181,6 +183,7 @@ export const dataPortfolio = [
     image: "/work3.png",
     urlGithub: "#!",
     urlDemo: "#!",
+    techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
 ];
 
