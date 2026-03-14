@@ -23,7 +23,7 @@ const ContactBackground = () => {
 
   return (
     <motion.div
-      className="pointer-events-none absolute w-[500px] h-[500px] rounded-full bg-emerald-500/20 blur-[120px]"
+      className="pointer-events-none absolute w-125 h-125 rounded-full bg-emerald-500/20 blur-[120px]"
       style={{
         left: smoothX,
         top: smoothY,
