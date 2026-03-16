@@ -3,10 +3,12 @@ import { dataPortfolio } from "@/data";
 import TransitionPage from "@/components/TransitionPage";
 import ContainerPage from "@/components/container";
 import PortfolioBox from "@/components/portfolioBox";
+import ProjectsReveal from "@/components/ProjectsReveal";
 
 const Projects = () => {
   return (
-    <section id="projects" className="scroll-mt-24">
+    <section id="projects" className="relative scroll-mt-24 overflow-hidden">
+      <ProjectsReveal />
       <ContainerPage>
         <TransitionPage />
 
@@ -18,7 +20,7 @@ const Projects = () => {
             </span>
           </h1>
 
-          <div className="relative z-10 grid max-w-5xl gap-6 mx-auto mt-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="relative z-10 grid max-w-5xl gap-6 mx-auto mt-8 pb-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
             {dataPortfolio.map((data) => (
               <PortfolioBox key={data.id} data={data} />
             ))}
