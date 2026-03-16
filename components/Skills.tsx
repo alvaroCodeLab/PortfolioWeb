@@ -15,7 +15,44 @@ const container: Variants = {
 
 const Skills = () => {
   return (
-    <section id="skills" className="min-h-screen flex items-center pt-24">
+    <section
+      id="skills"
+      className="relative min-h-screen flex items-center pt-24 overflow-hidden"
+    >
+      {/* Fondo animado */}
+      <div className="absolute inset-0 -z-10 pointer-events-none">
+
+        <motion.div
+          className="absolute -bottom-37.5 -left-50 w-150 h-150 rounded-full bg-cyan-500/20 blur-3xl"
+          animate={{
+            x: [-60, 60, -60],
+            y: [0, -40, 0],
+          }}
+          transition={{
+            duration: 12,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+
+        <motion.div
+          className="absolute -bottom-37.5 -right-50 w-150 h-150 rounded-full bg-purple-500/20 blur-3xl"
+          animate={{
+            x: [60, -60, 60],
+            y: [0, 40, 0],
+          }}
+          transition={{
+            duration: 14,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Fade MUCHO más suave */}
+        <div className="absolute bottom-0 w-full h-72 bg-linear-to-b from-transparent via-slate-950/60 to-slate-950" />
+
+      </div>
+
       <div className="max-w-5xl mx-auto px-6 w-full text-center">
         <motion.h2
           className="text-2xl leading-tight text-center md:text-4xl md:mb-5"
@@ -24,7 +61,7 @@ const Skills = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          Mis <span className="font-bold text-secondary text-emerald-500">Habilidades</span>
+          Mis <span className="font-bold text-emerald-500">Habilidades</span>
         </motion.h2>
 
         <motion.p

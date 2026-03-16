@@ -37,7 +37,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
-        <div className="font-bold text-lg">Mi Portfolio</div>
+        <div className="font-bold text-lg">Álvaro Serrano</div>
 
         <nav>
           <ul className="flex gap-6">
