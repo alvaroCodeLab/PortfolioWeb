@@ -4,6 +4,7 @@ import TransitionPage from "@/components/TransitionPage";
 import ContainerPage from "@/components/container";
 import PortfolioBox from "@/components/portfolioBox";
 import ProjectsReveal from "@/components/ProjectsReveal";
+import WordpressPages from "@/components/WordpressPages";
 
 const Projects = () => {
   return (
@@ -25,6 +26,8 @@ const Projects = () => {
               <PortfolioBox key={data.id} data={data} />
             ))}
           </div>
+
+          <WordpressPages />
         </div>
       </ContainerPage>
     </section>

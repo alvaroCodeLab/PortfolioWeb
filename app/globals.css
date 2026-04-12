@@ -30,6 +30,11 @@ main {
   z-index: 10;
 }
 
+/* Forzar que los encabezados usen la fuente Urbanist definida en layout.tsx */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-urbanist), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
