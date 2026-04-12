@@ -174,7 +174,7 @@ export const dataPortfolio = [
     title: "Aplicación de Alquiler de Vehículos",
     image: "/work2.png",
     urlGithub: "https://github.com/alvaroCodeLab/AlquilerVehiculos",
-    urlDemo: "#!",
+    urlDemo: "rodaviapp.gamer.gd",
     techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
   {
@@ -182,7 +182,7 @@ export const dataPortfolio = [
     title: "Sistema de Gestión de Multicines",
     image: "/work3.png",
     urlGithub: "https://github.com/alvaroCodeLab/Multicines",
-    urlDemo: "#!",
+    urlDemo: "multicinesapp.infinityfree.me",
     techs: ["HTML", "CSS", "JavaScript", "PHP", "MySQL"],
   },
 ];

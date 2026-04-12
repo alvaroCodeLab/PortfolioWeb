@@ -18,6 +18,16 @@ interface PortfolioBoxProps {
 const PortfolioBox = ({ data }: PortfolioBoxProps) => {
   const { title, image, urlDemo, urlGithub, techs } = data;
 
+  const normalizeUrl = (url: string | undefined) => {
+    if (!url) return null;
+    const trimmed = url.trim();
+    if (trimmed === "#!" || trimmed === "#" || trimmed === "") return null;
+    return trimmed.startsWith("http") ? trimmed : `https://${trimmed}`;
+  };
+
+  const demoHref = normalizeUrl(urlDemo);
+  const githubHref = normalizeUrl(urlGithub);
+
   return (
     <motion.div
       whileHover={{ scale: 1.05, y: -6 }}
@@ -58,23 +68,43 @@ const PortfolioBox = ({ data }: PortfolioBoxProps) => {
 
       {/* Botones siempre alineados al fondo */}
       <div className="flex gap-4 mt-2">
-        <Link
-          href={urlGithub}
-          target="_blank"
-          className="flex-1 text-center px-4 py-2 text-sm font-semibold text-white bg-linear-to-r from-blue-700 to-blue-500 rounded-lg shadow hover:scale-105 hover:from-blue-600 hover:to-blue-400 transition-transform duration-300 relative overflow-hidden"
-        >
-          Github
-          <span className="absolute inset-0 bg-white/10 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg" />
-        </Link>
+        {githubHref ? (
+          <a
+            href={githubHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 text-center px-4 py-2 text-sm font-semibold text-white bg-linear-to-r from-blue-700 to-blue-500 rounded-lg shadow hover:scale-105 hover:from-blue-600 hover:to-blue-400 transition-transform duration-300 relative overflow-hidden"
+          >
+            Github
+            <span className="absolute inset-0 bg-white/10 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg" />
+          </a>
+        ) : (
+          <button
+            disabled
+            className="flex-1 text-center px-4 py-2 text-sm font-semibold text-white/60 bg-slate-700/30 rounded-lg"
+          >
+            Github
+          </button>
+        )}
 
-        <Link
-          href={urlDemo}
-          target="_blank"
-          className="flex-1 text-center px-4 py-2 text-sm font-semibold text-white bg-linear-to-r from-purple-700 to-pink-600 rounded-lg shadow hover:scale-105 hover:from-purple-600 hover:to-pink-500 transition-transform duration-300 relative overflow-hidden"
-        >
-          Live Demo
-          <span className="absolute inset-0 bg-white/10 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg" />
-        </Link>
+        {demoHref ? (
+          <a
+            href={demoHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 text-center px-4 py-2 text-sm font-semibold text-white bg-linear-to-r from-purple-700 to-pink-600 rounded-lg shadow hover:scale-105 hover:from-purple-600 hover:to-pink-500 transition-transform duration-300 relative overflow-hidden"
+          >
+            Live Demo
+            <span className="absolute inset-0 bg-white/10 pointer-events-none opacity-0 group-hover:opacity-30 transition-opacity duration-300 rounded-lg" />
+          </a>
+        ) : (
+          <button
+            disabled
+            className="flex-1 text-center px-4 py-2 text-sm font-semibold text-white/60 bg-slate-700/30 rounded-lg"
+          >
+            Live Demo
+          </button>
+        )}
       </div>
 
       {/* Overlay decorativo al hover */}
