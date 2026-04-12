@@ -30,7 +30,7 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col justify-center max-w-md">
-          <h1 className="mw-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-6">
+          <h1 className="mw-5 text-2xl leading-tight text-center md:text-left md:text-4xl md:mb-6 section-title">
             Si puedes pensarlo, <br />
             <TypeAnimation
               sequence={[

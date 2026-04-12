@@ -14,7 +14,7 @@ const Projects = () => {
         <TransitionPage />
 
         <div className="flex flex-col justify-center h-full">
-          <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5">
+          <h1 className="text-2xl leading-tight text-center md:text-4xl md:mb-5 section-title">
             Mis últimos{" "}
             <span className="font-bold text-emerald-500">
               trabajos realizados

@@ -20,7 +20,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto px-6 w-full relative z-10">
         {/* TÍTULO */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold">
+          <h2 className="text-4xl font-bold section-title">
             Ponte en <span className="text-emerald-500">contacto</span>
           </h2>
           <p className="text-slate-400 mt-4 max-w-xl mx-auto">

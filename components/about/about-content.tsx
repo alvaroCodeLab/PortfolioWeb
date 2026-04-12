@@ -7,7 +7,7 @@ const AboutContent = () => {
     <ContainerPage>
       <Avatar />
 
-      <h2 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mt-10">
+      <h2 className="text-2xl leading-tight text-center md:text-left md:text-4xl md:mt-10 section-title">
         Toda mi{" "}
         <span className="font-bold text-emerald-400">
           trayectoria profesional

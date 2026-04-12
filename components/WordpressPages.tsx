@@ -71,7 +71,7 @@ const WordpressPages = () => {
   return (
     <section id="wordpress-pages" className="relative scroll-mt-24 overflow-hidden mt-10">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-center text-2xl md:text-3xl font-bold">
+        <h2 className="text-center text-2xl md:text-3xl font-bold section-title">
           Páginas hechas con <span className="text-emerald-400">WordPress</span>
         </h2>
 
