@@ -36,11 +36,11 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-black/50 backdrop-blur-sm">
-      <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
-        <div className="font-bold text-lg">Álvaro Serrano</div>
+      <div className="max-w-7xl mx-auto flex items-center justify-between py-3 px-4 sm:py-4 sm:px-6">
+        <div className="font-bold text-base sm:text-lg">Álvaro Serrano</div>
 
         <nav>
-          <ul className="flex gap-6">
+          <ul className="flex flex-wrap gap-3 sm:gap-6 text-sm sm:text-base">
             {nav.map((n) => (
               <li key={n.id}>
                 <button
