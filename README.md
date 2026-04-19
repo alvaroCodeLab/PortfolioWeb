@@ -7,7 +7,9 @@
 </p>
 
 <p align="center">
-  👉 <strong>https://portafolio-web-alvaroserrano.netlify.app</strong>
+  👉 <a href="https://portafolio-web-alvaroserrano.netlify.app" target="_blank">
+    <strong>portafolio-web-alvaroserrano.netlify.app</strong>
+  </a>
 </p>
 
 ---
@@ -21,16 +23,6 @@ Incluye:
 - 🧠 Buenas prácticas de desarrollo  
 - 🚀 Optimización de rendimiento  
 - 🎯 Enfoque en experiencia de usuario  
-
----
-
-## 🖼️ Preview
-
-<p align="center">
-  <img src="https://via.placeholder.com/800x400?text=Preview+Portfolio" alt="Preview del portfolio" />
-</p>
-
-> 💡 *Sustituye esta imagen por una captura real de tu portfolio.*
 
 ---
 
