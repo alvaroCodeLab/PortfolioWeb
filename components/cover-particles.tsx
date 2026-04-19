@@ -29,7 +29,7 @@ const CoverParticles = () => {
               events: {
                 onClick: { enable: false },
                 onHover: { enable: false },
-                resize: true
+                resize: { enable: true }
               }
             },
 
