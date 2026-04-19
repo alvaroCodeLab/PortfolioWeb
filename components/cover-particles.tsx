@@ -60,8 +60,7 @@ const CoverParticles = () => {
                 value: { min: 0.3, max: 0.9 },
                 animation: {
                   enable: true,
-                  speed: 0.6,
-                  minimumValue: 0.2
+                  speed: 0.6
                 }
               },
 
