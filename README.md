@@ -1,7 +1,7 @@
 # 🚀 Portfolio Web - Álvaro Serrano
 
 <p align="center">
-  <a href="https://portfolio-web-alvaroserrano.netlify.app/" target="_blank">
+  <a href="https://portfolio-web-alvaroserrano.netlify.app" target="_blank">
     <img src="https://img.shields.io/badge/🌐%20Ver%20Portfolio-Click%20Aquí-blue?style=for-the-badge" />
   </a>
 </p>
