@@ -6,12 +6,6 @@
   </a>
 </p>
 
-<p align="center">
-  👉 <a href="https://portafolio-web-alvaroserrano.netlify.app" target="_blank">
-    <strong>portafolio-web-alvaroserrano.netlify.app</strong>
-  </a>
-</p>
-
 ---
 
 ## ✨ Sobre el proyecto
